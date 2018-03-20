@@ -1,0 +1,33 @@
+{
+  "name": "serverless-plugin-upload-s3",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "description": "A Serverless plugin that uploads files to S3",
+  "author": "Don Brinn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DonBrinn/serverless-plugin-upload-s3"
+  },
+  "keywords": [
+    "serverless",
+    "serverless plugins"
+  ],
+  "main": "upload-s3.js",
+  "scripts": {
+    "test": "eslint .",
+    "preversion": "update-contrib",
+    "publish": "git push origin master; git push origin --tags"
+  },
+  "devDependencies": {
+    "eslint": "3.16.1",
+    "update-contributors": "^0.3.1"
+  },
+  "dependencies": {
+  },
+  "contributors": [
+    "Don Brinn (https://github.com/donbrinn)"
+  ]
+}
