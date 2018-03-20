@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-upload-s3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "node": ">=4.0"
   },
@@ -18,8 +18,7 @@
   "main": "upload-s3.js",
   "scripts": {
     "test": "eslint .",
-    "preversion": "update-contrib",
-    "publish": "git push origin master; git push origin --tags"
+    "preversion": "update-contrib"
   },
   "devDependencies": {
     "eslint": "3.16.1",
