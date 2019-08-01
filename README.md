@@ -1,5 +1,5 @@
 # serverless-plugin-upload-s3
-Serverless plugin to upload files to s3.
+Serverless plugin to upload files to s3. Requires at least `serverless@1.25.0`.
 
 
 ## Usage Example
