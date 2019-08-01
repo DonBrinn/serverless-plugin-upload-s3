@@ -28,7 +28,7 @@ class UploadFiles {
         Bucket: file.s3Bucket,
         Key: file.fileName,
         Body: fs.createReadStream(file.localPath)
-      }, this.options.stage, this.region);
+      });
     }));
   }
 
