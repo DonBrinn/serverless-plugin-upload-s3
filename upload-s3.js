@@ -9,8 +9,22 @@ class UploadFiles {
     this.provider = serverless.getProvider('aws');
     this.region = this.serverless.service.provider.region;
 
+    this.commands = {
+      ['s3-upload']: {
+        usage: 'Upload files to S3',
+        lifecycleEvents: ['s3-upload'],
+        commands: {
+          upload: {
+            usage: 'Publish the files',
+            lifecycleEvents: ['upload']
+          }
+        }
+      }
+    };
+
     this.hooks = {
-      'deploy:deploy': () => this.uploadFiles()
+      'deploy:deploy': () => this.uploadFiles(),
+      's3-upload:upload:upload': () => this.uploadFiles(),
     };
   }
 
