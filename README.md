@@ -23,5 +23,17 @@ custom:
 
 The above example will result in `target/foo.jar` being uploaded to `s3://bucket1/foo.jar` and `docs/readme.md` uploaded to `s3://bucket2/bar-readme.md`.
 
+To only upload files to S3 without taking any other Serverless actions, you can run:
+
+```sh
+s3-upload upload --stage my-stage
+```
+
+E.g.
+
+```sh
+npm run sls -- s3-upload upload --stage my-stage
+```
+
 ## NoDeploy
 If the `--noDeploy` command-line option is specified, this plugin does not attempt to upload anything to S3.
